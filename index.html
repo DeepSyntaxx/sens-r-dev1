@@ -3,42 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Op-Amp Analizi - sensörsunum</title>
+    <title>Op-Amp Analiz | Omer F. Ceylan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="overlay"></div>
     <header>
-        <h1>Op-Amp Devre Analizi ve Karşılaştırma</h1>
-        <p>Teknik Karşılaştırma Portalı - SUBÜ Arifiye MYO</p>
+        <div class="container">
+            <span class="badge">SUBÜ Arifiye MYO - 2026</span>
+            <h1>Op-Amp <span class="text-gradient">Devre Analizi</span></h1>
+            <p>FSR 402 Sensör ve LM358 Entegresi ile Sinyal Stabilizasyonu Karşılaştırması</p>
+        </div>
     </header>
 
-    <main>
-        <section class="comparison-section">
+    <main class="container">
+        <section class="grid-section">
+            <h2 class="section-title">Teknik Görsel Analiz</h2>
             <div class="grid-container">
                 <div class="card">
-                    <h3>Op-Amp İçeren Devre</h3>
-                    <img src="opamplı.jpeg" alt="Op-Amp Devresi" style="width:100%; border-radius:8px;">
+                    <div class="card-header">
+                        <span class="status-dot green"></span>
+                        <h3>Aktif Yükseltici Devre</h3>
+                    </div>
+                    <div class="media-box">
+                        <img src="opampli.jpeg" alt="Op-Amp Devresi">
+                    </div>
+                    <div class="card-info">
+                        <p>LM358 kullanılarak 0-5V aralığında stabilize edilmiş analog çıkış.</p>
+                    </div>
                 </div>
+
                 <div class="card">
-                    <h3>Op-Amp İçermeyen Devre</h3>
-                    <img src="opampsız.jpeg" alt="Pasif Devre" style="width:100%; border-radius:8px;">
+                    <div class="card-header">
+                        <span class="status-dot red"></span>
+                        <h3>Pasif Direnç Devresi</h3>
+                    </div>
+                    <div class="media-box">
+                        <img src="opampsiz.jpeg" alt="Pasif Devre">
+                    </div>
+                    <div class="card-info">
+                        <p>Yüksek gürültülü ve düşük gerilim aralığına sahip ham direnç değişimi.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="video-section">
-            <h2>Video Analizleri</h2>
+        <section class="grid-section">
+            <h2 class="section-title">Osiloskop & Çalışma Kayıtları</h2>
             <div class="video-grid">
-                <div class="video-card">
-                    <h3>Op-Amp'lı Çalışma</h3>
-                    <video controls width="100%">
-                        <source src="opamplıvideo.mp4" type="video/mp4">
+                <div class="card video-card">
+                    <h3>Op-Amp Çıkış Karakteristiği</h3>
+                    <video controls>
+                        <source src="opamplivideo.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="video-card">
-                    <h3>Op-Amp'sız Çalışma</h3>
-                    <video controls width="100%">
-                        <source src="opampsızvıdeo.mp4" type="video/mp4">
+                <div class="card video-card">
+                    <h3>Pasif Sinyal Karakteristiği</h3>
+                    <video controls>
+                        <source src="opampsizvideo.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -46,7 +69,9 @@
     </main>
 
     <footer>
-        <p>Hazırlayan: OmerF.Ceylan</p>
+        <div class="container">
+            <p>© 2026 Omer F. Ceylan | İnsansız Araç Teknikerliği</p>
+        </div>
     </footer>
 </body>
 </html>
